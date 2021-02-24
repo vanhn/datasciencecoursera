@@ -5,6 +5,7 @@ The important libraries for this code
         library(dplyr)
         library(tidyr)
 <h3>Create variables to save the paths to data</h3>
+
 - **x_dirs** : the list contains the paths to **X** data
 
 - **y_dirs** : the list contains the paths to **y** data
@@ -24,6 +25,7 @@ The important libraries for this code
 
 <h3>Read data</h3>
 1. Read X and y data
+
 - Using **read\.table** to read table data from .txt file
 
 - Using **lapply** to create a list that contains the list of table data
