@@ -1,11 +1,16 @@
 <h3>Import the library</h3>
+The important libraries for this code
+
         library(data.table)
         library(dplyr)
         library(tidyr)
 <h3>Create variables to save the paths to data</h3>
 - **x_dirs** : the list contains the paths to **X** data
+
 - **y_dirs** : the list contains the paths to **y** data
+
 - **activity_labels_dir** : the path to **activity labels** data
+
 - **features_dir** : the path to **features** data
 
 
@@ -19,8 +24,10 @@
 
 <h3>Read data</h3>
 1. Read X and y data
-- Using **read.table** to read table data from .txt file
+- Using **read\.table** to read table data from .txt file
+
 - Using **lapply** to create a list that contains the list of table data
+
 - Using **rbind** to concatenation list of table data to make one table data
 
         x <- do.call(rbind, lapply(x_dirs, read.table))
@@ -55,6 +62,7 @@
 **Note**: In R, we combine all components to a function called **run_analysis**
         
 <h3> Save data to file </h3>
+We save to 'data.txt' file
 
         res <- run_analysis()
         write.table(res, './data.txt')
