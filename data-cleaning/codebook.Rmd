@@ -1,0 +1,108 @@
+---
+title: "Getting and Cleaning Data Course Project"
+author: "Ho Ngoc Van"
+date: "2/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This file is detailed for dataset in [Getting and Cleaning Data Course Project](https://www.coursera.org/learn/data-cleaning?specialization=jhu-data-science) by [Data Science Specialization
+](https://www.coursera.org/specializations/jhu-data-science).
+
+About:
+
+- [Original dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+### The dataset includes the following files:
+
+- 'measurements.txt'
+
+- 'values.txt'
+
+
+### There are three tables in the dataset
+
+- measurements: List of all measurements
+
+- values : Each row identifies the each measurement and its value
+
+
+#### measurements
+
+measurement_id: int  The id define for each measurement. The values are in [1:474]
+        
+activity_id   : int  The id define for activity. The values are:
+
+- 1 : WALKING
+
+- 2 : WALKING_UPSTAIRS
+
+- 3 : WALKING_DOWNSTAIRS
+
+- 4 : SITTING
+
+- 5 : STANDING
+
+- 6 : LAYING
+                        
+feature       : chr  The feature name of signals. The values are:
+
+- tBodyAcc
+
+- tGravityAcc
+
+- tBodyAccJerk
+
+- tBodyGyro
+
+- tBodyGyroJerk
+
+- tBodyAccMag
+
+- tGravityAccMag
+
+- tBodyAccJerkMag
+
+- tBodyGyroMag
+
+- tBodyGyroJerkMag
+
+- fBodyAcc
+
+- fBodyAccJerk
+
+- fBodyGyro
+
+- fBodyAccMag
+
+- fBodyBodyAccJerkMag
+
+- fBodyBodyGyroMag
+
+- fBodyBodyGyroJerkMag"
+
+
+variable      : chr  The estimated variable from signals.The values are:
+
+- mean
+
+- std
+
+- meanFreq
+
+axis          : chr  The name of axis. The values are:
+
+- X
+
+- Y
+
+- Z
+
+### values
+
+- measurement_id: int  The id define for each measurement. The values are in [1:474]
+
+- value         : num  The value of measurement
