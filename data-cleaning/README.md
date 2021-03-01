@@ -119,7 +119,7 @@ values <- measurements %>%
         select(measurement_id, value)
 ```
 
-In detail, we explain in the **codebook.md**
+In detail, we explain in the [codebook.Rmd](codebook.Rmd)
 
 ### Save data to file
 

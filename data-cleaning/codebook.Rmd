@@ -2,7 +2,9 @@
 title: "Getting and Cleaning Data Course Project"
 author: "Ho Ngoc Van"
 date: "2/24/2021"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}

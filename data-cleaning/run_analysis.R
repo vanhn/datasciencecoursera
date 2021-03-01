@@ -39,6 +39,6 @@ values <- measurements %>%
 
 save_dir <- './my_data'
 if(!dir.exists(save_dir)){dir.create(save_dir)}
-write.table(activities, sprintf('%s\\activities.txt', save_dir), row.names = FALSE, col.names = FALSE)
+write.table(activities, sprintf('%s/activities.txt', save_dir), row.names = FALSE, col.names = FALSE)
 write.table(measurements, sprintf('%s/measurements.txt', save_dir), row.names = FALSE, col.names = FALSE)
 write.table(values, sprintf('%s/values.txt', save_dir), row.names = FALSE, col.names = FALSE)
